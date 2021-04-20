@@ -128,6 +128,15 @@
                     >
 
                 </TextView>
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/garis_tebal">
+
+
+                </ImageView>
+
 
                 <TextView
                     android:shadowColor="#F1F5F6"
@@ -161,6 +170,15 @@
                     >
 
                 </TextView>
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/garis_tebal">
+
+
+                </ImageView>
+
 
                 <TextView
                     android:shadowColor="#F1F5F6"
@@ -194,6 +212,15 @@
                     >
 
                 </TextView>
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/garis_tebal">
+
+
+                </ImageView>
+
 
 
 
@@ -311,6 +338,15 @@
                     >
 
                 </TextView>
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/garis_tebal">
+
+
+                </ImageView>
+
 
                 <TextView
                     android:shadowColor="#F1F5F6"
@@ -344,6 +380,15 @@
                     >
 
                 </TextView>
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/garis_tebal">
+
+
+                </ImageView>
+
                 <TextView
                     android:shadowColor="#F1F5F6"
                     android:shadowRadius="2"
@@ -376,13 +421,26 @@
                     >
 
                 </TextView>
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/garis_tebal">
+
+
+                </ImageView>
+
 
 
 
             </LinearLayout>
 
 
+
+
         </LinearLayout>
+
+
 
     </androidx.cardview.widget.CardView>
 
