@@ -4,6 +4,16 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/garis_tebal">
+
+
+    </ImageView>
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,6 +37,17 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 >
+
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/garis_tebal">
+
+
+                </ImageView>
+
                 <TextView
                     android:shadowColor="#F1F5F6"
                     android:shadowRadius="2"
@@ -36,9 +57,9 @@
                     android:layout_marginTop="5dp"
                     android:textSize="12dp"
                     android:textStyle="bold"
-                    android:gravity="left"
+                    android:gravity="center"
                     android:drawablePadding="5dp"
-                    android:text="Asal"
+                    android:text="Nama Pembeli"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     >
@@ -46,20 +67,28 @@
                 </TextView>
 
                 <TextView
-                    android:drawableLeft="@drawable/ic_baseline_location_on_24"
                     android:layout_marginBottom="10dp"
                     android:textColor="#100F0F"
                     android:layout_marginTop="5dp"
                     android:textSize="12dp"
                     android:textStyle="normal"
-                    android:gravity="left"
+                    android:gravity="center"
                     android:drawablePadding="5dp"
-                    android:text="Asal"
+                    android:text="Nama Pembeli"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     >
 
                 </TextView>
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/garis_tebal">
+
+
+                </ImageView>
+
 
                 <TextView
                     android:shadowColor="#F1F5F6"
@@ -70,9 +99,9 @@
                     android:layout_marginTop="5dp"
                     android:textSize="12dp"
                     android:textStyle="bold"
-                    android:gravity="left"
+                    android:gravity="center"
                     android:drawablePadding="5dp"
-                    android:text="Tanggal Berangkat"
+                    android:text="Nama Penerima Barang"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     >
@@ -80,20 +109,28 @@
                 </TextView>
 
                 <TextView
-                    android:drawableLeft="@drawable/ic_baseline_date_range_24"
                     android:layout_marginBottom="10dp"
                     android:textColor="#121212"
                     android:layout_marginTop="5dp"
                     android:textSize="12dp"
                     android:textStyle="normal"
-                    android:gravity="left"
+                    android:gravity="center"
                     android:drawablePadding="5dp"
-                    android:text="Tanggal Berangkat"
+                    android:text="Nama Penerima Barang"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     >
 
                 </TextView>
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/garis_tebal">
+
+
+                </ImageView>
+
 
                 <TextView
                     android:shadowColor="#F1F5F6"
@@ -104,9 +141,9 @@
                     android:layout_marginTop="5dp"
                     android:textSize="12dp"
                     android:textStyle="bold"
-                    android:gravity="left"
+                    android:gravity="center"
                     android:drawablePadding="5dp"
-                    android:text="Jam Berangkat"
+                    android:text="Jenis Barang"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     >
@@ -114,15 +151,14 @@
                 </TextView>
 
                 <TextView
-                    android:drawableLeft="@drawable/ic_baseline_access_time_24"
                     android:layout_marginBottom="10dp"
                     android:textColor="#090707"
                     android:layout_marginTop="5dp"
                     android:textSize="12dp"
                     android:textStyle="normal"
-                    android:gravity="left"
+                    android:gravity="center"
                     android:drawablePadding="5dp"
-                    android:text="Jam Berangkat"
+                    android:text="Jenis Barang"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     >
@@ -136,93 +172,6 @@
 
 
                 </ImageView>
-
-
-                <TextView
-                    android:shadowColor="#F1F5F6"
-                    android:shadowRadius="2"
-                    android:shadowDx="1"
-                    android:shadowDy="1"
-                    android:textColor="#0E0E0E"
-                    android:layout_marginTop="5dp"
-                    android:textSize="12dp"
-                    android:textStyle="bold"
-                    android:gravity="left"
-                    android:drawablePadding="5dp"
-                    android:text="Nama Penjual"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    >
-
-                </TextView>
-
-                <TextView
-                    android:layout_marginBottom="10dp"
-                    android:textColor="#0E0E0E"
-                    android:layout_marginTop="5dp"
-                    android:textSize="12dp"
-                    android:textStyle="normal"
-                    android:gravity="left"
-                    android:drawablePadding="5dp"
-                    android:text="Nama Penjual"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    >
-
-                </TextView>
-                <ImageView
-                    android:layout_marginTop="5dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/garis_tebal">
-
-
-                </ImageView>
-
-
-                <TextView
-                    android:shadowColor="#F1F5F6"
-                    android:shadowRadius="2"
-                    android:shadowDx="1"
-                    android:shadowDy="1"
-                    android:textColor="#0E0E0E"
-                    android:layout_marginTop="5dp"
-                    android:textSize="12dp"
-                    android:textStyle="bold"
-                    android:gravity="left"
-                    android:drawablePadding="5dp"
-                    android:text="Jenis Barang Titipan"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    >
-
-                </TextView>
-
-                <TextView
-                    android:layout_marginBottom="10dp"
-                    android:textColor="#0E0E0E"
-                    android:layout_marginTop="5dp"
-                    android:textSize="12dp"
-                    android:textStyle="normal"
-                    android:gravity="left"
-                    android:drawablePadding="5dp"
-                    android:text="Jenis Barang Titipan"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    >
-
-                </TextView>
-                <ImageView
-                    android:layout_marginTop="5dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/garis_tebal">
-
-
-                </ImageView>
-
-
-
 
 
 
@@ -237,6 +186,17 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 >
+
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/garis_tebal">
+
+
+                </ImageView>
+
                 <TextView
                     android:shadowColor="#F1F5F6"
                     android:shadowRadius="2"
@@ -246,9 +206,9 @@
                     android:layout_marginTop="5dp"
                     android:textSize="12dp"
                     android:textStyle="bold"
-                    android:gravity="left"
+                    android:gravity="center"
                     android:drawablePadding="5dp"
-                    android:text="Tujuan"
+                    android:text="Alamat Pembeli"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     >
@@ -256,20 +216,28 @@
                 </TextView>
 
                 <TextView
-                    android:drawableLeft="@drawable/ic_baseline_location_on_24"
                     android:layout_marginBottom="10dp"
                     android:textColor="#0B0A0A"
                     android:layout_marginTop="5dp"
                     android:textSize="12dp"
                     android:textStyle="normal"
-                    android:gravity="left"
+                    android:gravity="center"
                     android:drawablePadding="5dp"
-                    android:text="Tujuan"
+                    android:text="Alamat Pembeli"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     >
 
                 </TextView>
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/garis_tebal">
+
+
+                </ImageView>
+
 
                 <TextView
                     android:shadowColor="#F1F5F6"
@@ -280,9 +248,9 @@
                     android:layout_marginTop="5dp"
                     android:textSize="12dp"
                     android:textStyle="bold"
-                    android:gravity="left"
+                    android:gravity="center"
                     android:drawablePadding="5dp"
-                    android:text="Tanggal Tiba"
+                    android:text="Alamat Penerima Barang"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     >
@@ -290,20 +258,27 @@
                 </TextView>
 
                 <TextView
-                    android:drawableLeft="@drawable/ic_baseline_date_range_24"
                     android:layout_marginBottom="10dp"
                     android:textColor="#100D0D"
                     android:layout_marginTop="5dp"
                     android:textSize="12dp"
                     android:textStyle="normal"
-                    android:gravity="left"
+                    android:gravity="center"
                     android:drawablePadding="5dp"
-                    android:text="Tanggal Tiba"
+                    android:text="Alamat Penerima Barang"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     >
 
                 </TextView>
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/garis_tebal">
+
+
+                </ImageView>
 
                 <TextView
                     android:shadowColor="#F1F5F6"
@@ -314,9 +289,9 @@
                     android:layout_marginTop="5dp"
                     android:textSize="12dp"
                     android:textStyle="bold"
-                    android:gravity="left"
+                    android:gravity="center"
                     android:drawablePadding="5dp"
-                    android:text="Jam Tiba"
+                    android:text="Berat Barang / Kg"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     >
@@ -324,98 +299,14 @@
                 </TextView>
 
                 <TextView
-                    android:drawableLeft="@drawable/ic_baseline_access_time_24"
                     android:layout_marginBottom="10dp"
                     android:textColor="#151414"
                     android:layout_marginTop="5dp"
                     android:textSize="12dp"
                     android:textStyle="normal"
-                    android:gravity="left"
+                    android:gravity="center"
                     android:drawablePadding="5dp"
-                    android:text="Jam Tiba"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    >
-
-                </TextView>
-                <ImageView
-                    android:layout_marginTop="5dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/garis_tebal">
-
-
-                </ImageView>
-
-
-                <TextView
-                    android:shadowColor="#F1F5F6"
-                    android:shadowRadius="2"
-                    android:shadowDx="1"
-                    android:shadowDy="1"
-                    android:textColor="#0E0E0E"
-                    android:layout_marginTop="5dp"
-                    android:textSize="12dp"
-                    android:textStyle="bold"
-                    android:gravity="left"
-                    android:drawablePadding="5dp"
-                    android:text="Harga"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    >
-
-                </TextView>
-
-                <TextView
-                    android:layout_marginBottom="10dp"
-                    android:textColor="#121212"
-                    android:layout_marginTop="5dp"
-                    android:textSize="12dp"
-                    android:textStyle="normal"
-                    android:gravity="left"
-                    android:drawablePadding="5dp"
-                    android:text="Harga"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    >
-
-                </TextView>
-                <ImageView
-                    android:layout_marginTop="5dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/garis_tebal">
-
-
-                </ImageView>
-
-                <TextView
-                    android:shadowColor="#F1F5F6"
-                    android:shadowRadius="2"
-                    android:shadowDx="1"
-                    android:shadowDy="1"
-                    android:textColor="#0E0E0E"
-                    android:layout_marginTop="5dp"
-                    android:textSize="12dp"
-                    android:textStyle="bold"
-                    android:gravity="left"
-                    android:drawablePadding="5dp"
-                    android:text="Jumlah Titipan / Kg"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    >
-
-                </TextView>
-
-                <TextView
-                    android:layout_marginBottom="10dp"
-                    android:textColor="#121212"
-                    android:layout_marginTop="5dp"
-                    android:textSize="12dp"
-                    android:textStyle="normal"
-                    android:gravity="left"
-                    android:drawablePadding="5dp"
-                    android:text="Jumlah Titipan / Kg"
+                    android:text="Berat Barang / Kg"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     >
@@ -443,5 +334,6 @@
 
 
     </androidx.cardview.widget.CardView>
+
 
 </LinearLayout>
