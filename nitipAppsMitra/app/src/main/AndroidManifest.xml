@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Nitip">
-        <activity android:name=".view.InputDoneActivity"></activity>
+        <activity android:name=".view.BtmNavActivity"></activity>
+        <activity android:name=".view.InputDoneActivity" />
         <activity android:name=".view.GetMoneyDetailActivity" />
         <activity android:name=".view.DoneDetailActivity" />
         <activity android:name=".view.ConfirmDetailActivity" />
