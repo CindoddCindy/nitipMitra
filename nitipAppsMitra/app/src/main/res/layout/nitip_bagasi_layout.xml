@@ -24,6 +24,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <TextView
+                    android:id="@+id/id_tv_item_lugg_asal"
                     android:layout_weight="1"
                     android:shadowColor="#F1F5F6"
                     android:shadowRadius="2"
@@ -60,6 +61,7 @@
 
                 </TextView>
                 <TextView
+                    android:id="@+id/tv_item_lugg_tujuan"
                     android:layout_weight="1"
                     android:shadowColor="#F1F5F6"
                     android:shadowRadius="2"
@@ -88,6 +90,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <TextView
+                    android:id="@+id/tv_item_lugg_tgal_going"
                     android:layout_marginLeft="5dp"
                     android:layout_weight="1"
                     android:layout_marginBottom="10dp"
@@ -104,6 +107,7 @@
 
                 </TextView>
                 <TextView
+                    android:id="@+id/tv_item_lugg_tgal_arr"
                     android:layout_weight="1"
                     android:layout_marginBottom="10dp"
                     android:textColor="#100F0F"
@@ -140,6 +144,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/tv_item_lugg_nama_seller"
                     android:layout_margin="3dp"
                     android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
                     android:layout_weight="1"
@@ -157,6 +162,7 @@
 
                 </TextView>
                 <TextView
+                    android:id="@+id/tv_item_lugg_price"
                     android:layout_margin="3dp"
                     android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
                     android:layout_weight="1"
@@ -174,6 +180,7 @@
 
                 </TextView>
                 <TextView
+                    android:id="@+id/tv_item_lugg_type"
                     android:layout_margin="3dp"
                     android:drawableLeft="@drawable/ic_baseline_approval_24"
                     android:layout_weight="1"
