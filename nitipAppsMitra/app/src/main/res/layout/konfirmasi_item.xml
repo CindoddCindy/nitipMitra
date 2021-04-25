@@ -72,6 +72,7 @@
 
 
                 <TextView
+                    android:id="@+id/tv_item_confirm_lokasi_jemput_barang"
                     android:padding="5dp"
                     android:drawableLeft="@drawable/ic_baseline_person_pin_circle_24"
                     android:textColor="#151414"
@@ -87,6 +88,7 @@
 
                 </TextView>
                 <TextView
+                    android:id="@+id/tv_item_confirm_jam_jemput_barang"
                     android:padding="5dp"
                     android:drawableLeft="@drawable/ic_baseline_access_time_24"
                     android:layout_marginBottom="10dp"
