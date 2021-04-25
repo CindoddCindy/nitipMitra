@@ -180,7 +180,7 @@
 
                 </TextView>
                 <TextView
-                    android:id="@+id/tv_item_lugg_type"
+                    android:id="@+id/tv_item_lugg_height"
                     android:layout_margin="3dp"
                     android:drawableLeft="@drawable/ic_baseline_approval_24"
                     android:layout_weight="1"

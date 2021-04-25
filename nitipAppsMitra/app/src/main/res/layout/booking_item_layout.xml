@@ -25,6 +25,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <TextView
+                    android:id="@+id/tv_item_booking_asal_titip"
                     android:drawableLeft="@drawable/ic_baseline_person_pin_circle_24"
                     android:layout_weight="1"
                     android:shadowColor="#F1F5F6"
@@ -62,6 +63,7 @@
 
                 </TextView>
                 <TextView
+                    android:id="@+id/tv_item_booking_tujuan_titip"
                     android:drawableLeft="@drawable/ic_baseline_person_pin_circle_24"
                     android:layout_weight="1"
                     android:shadowColor="#F1F5F6"
@@ -91,6 +93,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <TextView
+                    android:id="@+id/tv_item_booking_nama_pengirim"
                     android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
                     android:layout_marginLeft="5dp"
                     android:layout_weight="1"
@@ -125,6 +128,7 @@
                 </TextView>
 
                 <TextView
+                    android:id="@+id/tv_item_booking_nama_penerima"
                     android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
                     android:layout_weight="1"
                     android:layout_marginBottom="10dp"
@@ -162,6 +166,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/tv_item_booking_jenis_barang"
                     android:layout_margin="3dp"
                     android:drawableLeft="@drawable/ic_baseline_filter_alt_24"
                     android:layout_weight="1"
@@ -179,6 +184,7 @@
 
                 </TextView>
                 <TextView
+                    android:id="@+id/tv_item_booking_height"
                     android:layout_margin="3dp"
                     android:drawableLeft="@drawable/ic_baseline_approval_24"
                     android:layout_weight="1"
