@@ -183,7 +183,7 @@
                                     android:orientation="vertical"
                                     >
                                     <TextView
-                                        android:id="@+id/tv_pay_det_jumlah_uang"
+                                        android:id="@+id/tv_pay_det_jumlah_uang_tf"
                                         android:padding="5dp"
                                         android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
                                         android:layout_marginBottom="10dp"
@@ -199,7 +199,7 @@
 
                                     </TextView>
                                     <TextView
-                                        android:id="@+id/tv_pay_det_from_bank"
+                                        android:id="@+id/tv_pay_det_from_bank_tf"
                                         android:padding="5dp"
                                         android:drawableLeft="@drawable/ic_baseline_other_houses_24"
                                         android:layout_marginBottom="10dp"
@@ -341,7 +341,7 @@
 
                                 </TextView>
                                 <TextView
-                                    android:id="@+id/pay_det_tujuan_pngirim"
+                                    android:id="@+id/tv_pay_det_tujuan_pngirim"
                                     android:drawableLeft="@drawable/ic_baseline_person_pin_circle_24"
                                     android:layout_weight="1"
                                     android:shadowColor="#F1F5F6"
@@ -371,7 +371,7 @@
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
                                 <TextView
-                                    android:id="@+id/pay_det_nama_pengirim"
+                                    android:id="@+id/tv_pay_det_nama_pengirim"
                                     android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
                                     android:layout_marginLeft="5dp"
                                     android:layout_weight="1"
@@ -462,7 +462,7 @@
 
                                 </TextView>
                                 <TextView
-                                    android:id="@+id/pay_det_berat_barang"
+                                    android:id="@+id/tv_pay_det_berat_barang"
                                     android:layout_margin="3dp"
                                     android:drawableLeft="@drawable/ic_baseline_exposure_plus_1_24"
                                     android:layout_weight="1"
@@ -527,7 +527,7 @@
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
                                 <TextView
-                                    android:id="@+id/id_pay_det_lugg_asal"
+                                    android:id="@+id/tv_id_pay_det_lugg_asal"
                                     android:layout_weight="1"
                                     android:shadowColor="#F1F5F6"
                                     android:shadowRadius="2"
