@@ -50,6 +50,7 @@
             </TextView>
 
             <EditText
+                android:id="@+id/et_input_lugg_nama_seller"
                 android:padding="3dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="5dp"
@@ -82,6 +83,7 @@
             </TextView>
 
             <EditText
+                android:id="@+id/et_input_lugg_asal_keberangkatan"
                 android:padding="3dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="5dp"
@@ -114,6 +116,7 @@
             </TextView>
 
             <EditText
+                android:id="@+id/et_input_lugg_tujuan_berangkat"
                 android:padding="3dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="5dp"
@@ -146,6 +149,7 @@
             </TextView>
 
             <EditText
+                android:id="@+id/et_input_lugg_tanggal_berangkat"
                 android:padding="3dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="5dp"
@@ -158,6 +162,40 @@
                 >
 
             </EditText>
+            <TextView
+                android:shadowColor="#F1F5F6"
+                android:shadowRadius="2"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:padding="3dp"
+                android:textColor="#040303"
+                android:layout_marginTop="5dp"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:drawablePadding="5dp"
+                android:text="Jam Berangkat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_input_lugg_jam_berangkat"
+                android:padding="3dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12dp"
+                android:textStyle="normal"
+                android:gravity="left"
+                android:drawablePadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </EditText>
+
             <TextView
                 android:shadowColor="#F1F5F6"
                 android:shadowRadius="2"
@@ -178,6 +216,7 @@
             </TextView>
 
             <EditText
+                android:id="@+id/et_input_lugg_tanggal_tiba"
                 android:padding="3dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="5dp"
@@ -190,6 +229,41 @@
                 >
 
             </EditText>
+
+            <TextView
+                android:shadowColor="#F1F5F6"
+                android:shadowRadius="2"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:padding="3dp"
+                android:textColor="#040303"
+                android:layout_marginTop="5dp"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:drawablePadding="5dp"
+                android:text="Jam Tiba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_input_lugg_jam_tiba"
+                android:padding="3dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12dp"
+                android:textStyle="normal"
+                android:gravity="left"
+                android:drawablePadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </EditText>
+
             <TextView
                 android:shadowColor="#F1F5F6"
                 android:shadowRadius="2"
@@ -210,6 +284,7 @@
             </TextView>
 
             <EditText
+                android:id="@+id/et_input_lugg_harga_bagasi"
                 android:padding="3dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="5dp"
@@ -242,6 +317,7 @@
             </TextView>
 
             <EditText
+                android:id="@+id/et_input_lugg_kapasitas_kg"
                 android:padding="3dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="5dp"
@@ -274,6 +350,7 @@
             </TextView>
 
             <EditText
+                android:id="@+id/et_input_lugg_jenis_barang"
                 android:padding="3dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="5dp"
