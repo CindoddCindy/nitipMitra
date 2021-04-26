@@ -168,7 +168,7 @@
                 <TextView
                     android:id="@+id/tv_item_booking_jenis_barang"
                     android:layout_margin="3dp"
-                    android:drawableLeft="@drawable/ic_baseline_filter_alt_24"
+                    android:drawableLeft="@drawable/ic_baseline_home_repair_service_24"
                     android:layout_weight="1"
                     android:layout_marginBottom="10dp"
                     android:textColor="#100F0F"
@@ -186,7 +186,7 @@
                 <TextView
                     android:id="@+id/tv_item_booking_height"
                     android:layout_margin="3dp"
-                    android:drawableLeft="@drawable/ic_baseline_approval_24"
+                    android:drawableLeft="@drawable/ic_baseline_exposure_plus_1_24"
                     android:layout_weight="1"
                     android:layout_marginBottom="10dp"
                     android:textColor="#100F0F"
