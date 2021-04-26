@@ -69,7 +69,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
                             <TextView
-                                android:id="@+id/tv_item_booking_asal_titip"
+                                android:id="@+id/tv_input_done_by_asal_titip"
                                 android:drawableLeft="@drawable/ic_baseline_person_pin_circle_24"
                                 android:layout_weight="1"
                                 android:shadowColor="#F1F5F6"
@@ -107,7 +107,7 @@
 
                             </TextView>
                             <TextView
-                                android:id="@+id/tv_item_booking_tujuan_titip"
+                                android:id="@+id/tv_input_booking_by_tujuan_titip"
                                 android:drawableLeft="@drawable/ic_baseline_person_pin_circle_24"
                                 android:layout_weight="1"
                                 android:shadowColor="#F1F5F6"
@@ -137,7 +137,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
                             <TextView
-                                android:id="@+id/tv_item_booking_nama_pengirim"
+                                android:id="@+id/tv_input_done_by_nama_pengirim"
                                 android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
                                 android:layout_marginLeft="5dp"
                                 android:layout_weight="1"
@@ -172,7 +172,7 @@
                             </TextView>
 
                             <TextView
-                                android:id="@+id/tv_item_booking_nama_penerima"
+                                android:id="@+id/tv_input_done_by_nama_penerima"
                                 android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
                                 android:layout_weight="1"
                                 android:layout_marginBottom="10dp"
@@ -210,7 +210,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                android:id="@+id/tv_item_booking_jenis_barang"
+                                android:id="@+id/tv_input_done_by_jenis_barang"
                                 android:layout_margin="3dp"
                                 android:drawableLeft="@drawable/ic_baseline_home_repair_service_24"
                                 android:layout_weight="1"
@@ -228,7 +228,7 @@
 
                             </TextView>
                             <TextView
-                                android:id="@+id/tv_item_booking_height"
+                                android:id="@+id/tv_input_done_by_height"
                                 android:layout_margin="3dp"
                                 android:drawableLeft="@drawable/ic_baseline_exposure_plus_1_24"
                                 android:layout_weight="1"
@@ -294,7 +294,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
                             <TextView
-                                android:id="@+id/id_tv_item_lugg_asal"
+                                android:id="@+id/tv_input_done_lugg_asal"
                                 android:layout_weight="1"
                                 android:shadowColor="#F1F5F6"
                                 android:shadowRadius="2"
@@ -331,7 +331,7 @@
 
                             </TextView>
                             <TextView
-                                android:id="@+id/tv_item_lugg_tujuan"
+                                android:id="@+id/tv_input_done_lugg_tujuan"
                                 android:layout_weight="1"
                                 android:shadowColor="#F1F5F6"
                                 android:shadowRadius="2"
@@ -365,7 +365,7 @@
                                 android:orientation="vertical"
                                 android:layout_weight="1">
                                 <TextView
-                                    android:id="@+id/tv_item_lugg_tgal_going"
+                                    android:id="@+id/tv_input_done_lugg_tgal_going"
                                     android:layout_marginLeft="5dp"
                                     android:layout_weight="1"
                                     android:layout_marginBottom="0dp"
@@ -383,7 +383,7 @@
                                 </TextView>
 
                                 <TextView
-                                    android:id="@+id/tv_item_lugg_time_going"
+                                    android:id="@+id/tv_input_done_lugg_time_going"
                                     android:layout_marginLeft="5dp"
                                     android:layout_weight="1"
                                     android:layout_marginBottom="5dp"
@@ -411,7 +411,7 @@
                                 android:orientation="vertical"
                                 android:layout_weight="1">
                                 <TextView
-                                    android:id="@+id/tv_item_lugg_tgal_arr"
+                                    android:id="@+id/tv_input_done_lugg_tgal_arr"
                                     android:layout_weight="1"
                                     android:layout_marginBottom="0dp"
                                     android:textColor="#100F0F"
@@ -428,7 +428,7 @@
                                 </TextView>
 
                                 <TextView
-                                    android:id="@+id/tv_item_lugg_time_arr"
+                                    android:id="@+id/tv_input_done_lugg_time_arr"
                                     android:layout_weight="1"
                                     android:layout_marginBottom="5dp"
                                     android:textColor="#100F0F"
@@ -476,7 +476,7 @@
                                 android:orientation="vertical">
 
                                 <TextView
-                                    android:id="@+id/tv_item_lugg_nama_seller"
+                                    android:id="@+id/tv_input_done_lugg_nama_seller"
                                     android:layout_margin="3dp"
                                     android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
                                     android:layout_weight="1"
@@ -494,7 +494,7 @@
 
                                 </TextView>
                                 <TextView
-                                    android:id="@+id/tv_item_lugg_price"
+                                    android:id="@+id/tv_input_done_lugg_price"
                                     android:layout_margin="3dp"
                                     android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
                                     android:layout_weight="1"
@@ -521,7 +521,7 @@
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical">
                                 <TextView
-                                    android:id="@+id/tv_item_lugg_height"
+                                    android:id="@+id/tv_input_done_lugg_height"
                                     android:layout_margin="3dp"
                                     android:drawableLeft="@drawable/ic_baseline_exposure_plus_1_24"
                                     android:layout_weight="1"
@@ -540,7 +540,7 @@
                                 </TextView>
 
                                 <TextView
-                                    android:id="@+id/tv_item_lugg_type"
+                                    android:id="@+id/tv_input_done_lugg_type"
                                     android:layout_margin="3dp"
                                     android:drawableLeft="@drawable/ic_baseline_home_repair_service_24"
                                     android:layout_weight="1"
@@ -626,6 +626,7 @@
                                 >
 
                                 <TextView
+                                    android:id="@+id/tv_input_done_tf_sl_name"
                                     android:padding="5dp"
                                     android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
                                     android:textColor="#151414"
@@ -641,6 +642,7 @@
 
                                 </TextView>
                                 <TextView
+                                    android:id="@+id/tv_input_done_tf_sl_tgal"
                                     android:padding="5dp"
                                     android:drawableLeft="@drawable/ic_baseline_date_range_24"
                                     android:layout_marginBottom="10dp"
@@ -706,6 +708,7 @@
                                 android:orientation="vertical"
                                 >
                                 <TextView
+                                    android:id="@+id/tv_input_done_sl_tf_harga"
                                     android:padding="5dp"
                                     android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
                                     android:layout_marginBottom="10dp"
@@ -721,6 +724,7 @@
 
                                 </TextView>
                                 <TextView
+                                    android:id="@+id/tv_input_done_tf_sl_nama_bank"
                                     android:padding="5dp"
                                     android:drawableLeft="@drawable/ic_baseline_other_houses_24"
                                     android:layout_marginBottom="10dp"
@@ -835,7 +839,7 @@
                                 >
 
                                 <TextView
-                                    android:id="@+id/tv_pay_nama_by_tf"
+                                    android:id="@+id/tv_input_done_tf_by_nama_akun"
                                     android:padding="5dp"
                                     android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
                                     android:textColor="#151414"
@@ -851,7 +855,7 @@
 
                                 </TextView>
                                 <TextView
-                                    android:id="@+id/tv_pay_tgl_by_tf"
+                                    android:id="@+id/tv_input_done_tf_by_tgal"
                                     android:padding="5dp"
                                     android:drawableLeft="@drawable/ic_baseline_date_range_24"
                                     android:layout_marginBottom="10dp"
@@ -917,7 +921,7 @@
                                 android:orientation="vertical"
                                 >
                                 <TextView
-                                    android:id="@+id/tv_pay_jmlh_by_tf"
+                                    android:id="@+id/tv_input_done_tf_by_harga"
                                     android:padding="5dp"
                                     android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
                                     android:layout_marginBottom="10dp"
@@ -933,7 +937,7 @@
 
                                 </TextView>
                                 <TextView
-                                    android:id="@+id/tv_pay_bank_by_tf"
+                                    android:id="@+id/tv_input_done_tf_by_bank_name"
                                     android:padding="5dp"
                                     android:drawableLeft="@drawable/ic_baseline_other_houses_24"
                                     android:layout_marginBottom="10dp"
@@ -1039,6 +1043,7 @@
                 </TextView>
 
                 <EditText
+                    android:id="@+id/et_input_done_nama_penerima"
                     android:padding="3dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="5dp"
@@ -1071,6 +1076,7 @@
                 </TextView>
 
                 <EditText
+                    android:id="@+id/et_input_done_tanggal_diterima"
                     android:padding="3dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="5dp"
@@ -1104,6 +1110,7 @@
                 </TextView>
 
                 <EditText
+                    android:id="@+id/et_input_done_lokasi_diterima"
                     android:padding="3dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="5dp"
@@ -1123,6 +1130,7 @@
 
 
                 <TextView
+                    android:id="@+id/tv_input_done_btn_input_done"
                     android:layout_marginBottom="15dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
