@@ -83,7 +83,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
                             <TextView
-                                android:id="@+id/tv_book_detail_asal_barang"
+                                android:id="@+id/tv_confirm_input_asal_barang"
                                 android:drawableLeft="@drawable/ic_baseline_person_pin_circle_24"
                                 android:layout_weight="1"
                                 android:shadowColor="#F1F5F6"
@@ -121,7 +121,7 @@
 
                             </TextView>
                             <TextView
-                                android:id="@+id/tv_book_detail_tujuan_barang"
+                                android:id="@+id/tv_confirm_input_tujuan_barang"
                                 android:drawableLeft="@drawable/ic_baseline_person_pin_circle_24"
                                 android:layout_weight="1"
                                 android:shadowColor="#F1F5F6"
@@ -151,7 +151,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
                             <TextView
-                                android:id="@+id/tv_book_detail_nama_pengirim"
+                                android:id="@+id/tv_confirm_input_nama_pengirim"
                                 android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
                                 android:layout_marginLeft="5dp"
                                 android:layout_weight="1"
@@ -186,7 +186,7 @@
                             </TextView>
 
                             <TextView
-                                android:id="@+id/tv_book_detail_nama_penerima"
+                                android:id="@+id/tv_confirm_input_nama_penerima"
                                 android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
                                 android:layout_weight="1"
                                 android:layout_marginBottom="10dp"
@@ -224,7 +224,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                android:id="@+id/tv_detail_booking_jenis_barang"
+                                android:id="@+id/tv_confirm_input_jenis_barang"
                                 android:layout_margin="3dp"
                                 android:drawableLeft="@drawable/ic_baseline_home_repair_service_24"
                                 android:layout_weight="1"
@@ -242,7 +242,7 @@
 
                             </TextView>
                             <TextView
-                                android:id="@+id/tv_detail_booking_berat_barang"
+                                android:id="@+id/tv_confirm_input_berat_barang"
                                 android:layout_margin="3dp"
                                 android:drawableLeft="@drawable/ic_baseline_exposure_plus_1_24"
                                 android:layout_weight="1"
@@ -315,7 +315,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
                             <TextView
-                                android:id="@+id/id_tv_detail_booking_lugg_asal"
+                                android:id="@+id/id_tv_lugg_confirm_input_asal"
                                 android:layout_weight="1"
                                 android:shadowColor="#F1F5F6"
                                 android:shadowRadius="2"
@@ -352,7 +352,7 @@
 
                             </TextView>
                             <TextView
-                                android:id="@+id/tv_detail_booking_tujuan"
+                                android:id="@+id/tv_lugg_confirm_input_tujuan"
                                 android:layout_weight="1"
                                 android:shadowColor="#F1F5F6"
                                 android:shadowRadius="2"
@@ -386,7 +386,7 @@
                                 android:orientation="vertical"
                                 android:layout_weight="1">
                                 <TextView
-                                    android:id="@+id/tv_item_detail_booking_tgal_going"
+                                    android:id="@+id/tv_lugg_confirm_input_tgal_going"
                                     android:layout_marginLeft="5dp"
                                     android:layout_weight="1"
                                     android:layout_marginBottom="0dp"
@@ -404,7 +404,7 @@
                                 </TextView>
 
                                 <TextView
-                                    android:id="@+id/tv_item_detail_booking_time_going"
+                                    android:id="@+id/tv_lugg_confirm_input_time_going"
                                     android:layout_marginLeft="5dp"
                                     android:layout_weight="1"
                                     android:layout_marginBottom="5dp"
@@ -432,7 +432,7 @@
                                 android:orientation="vertical"
                                 android:layout_weight="1">
                                 <TextView
-                                    android:id="@+id/tv_detail_boking_tgal_arr"
+                                    android:id="@+id/tv_lugg_confirm_input_tgal_arr"
                                     android:layout_weight="1"
                                     android:layout_marginBottom="0dp"
                                     android:textColor="#100F0F"
@@ -449,7 +449,7 @@
                                 </TextView>
 
                                 <TextView
-                                    android:id="@+id/tv_item_detail_booking_time_arr"
+                                    android:id="@+id/tv_lugg_confirm_input_time_arr"
                                     android:layout_weight="1"
                                     android:layout_marginBottom="5dp"
                                     android:textColor="#100F0F"
@@ -497,7 +497,7 @@
                                 android:orientation="vertical">
 
                                 <TextView
-                                    android:id="@+id/tv_item_detail_booking_nama_seller"
+                                    android:id="@+id/tv_lugg_confirm_input_nama_seller"
                                     android:layout_margin="3dp"
                                     android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
                                     android:layout_weight="1"
@@ -515,7 +515,7 @@
 
                                 </TextView>
                                 <TextView
-                                    android:id="@+id/tv_booking_detail_price"
+                                    android:id="@+id/tv_lugg_confirm_input_price"
                                     android:layout_margin="3dp"
                                     android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
                                     android:layout_weight="1"
@@ -542,7 +542,7 @@
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical">
                                 <TextView
-                                    android:id="@+id/tv_booking_detail_height"
+                                    android:id="@+id/tv_lugg_confirm_input_height"
                                     android:layout_margin="3dp"
                                     android:drawableLeft="@drawable/ic_baseline_exposure_plus_1_24"
                                     android:layout_weight="1"
@@ -561,7 +561,7 @@
                                 </TextView>
 
                                 <TextView
-                                    android:id="@+id/tv_booking_detail_type"
+                                    android:id="@+id/tv_lugg_confirm_input_type"
                                     android:layout_margin="3dp"
                                     android:drawableLeft="@drawable/ic_baseline_home_repair_service_24"
                                     android:layout_weight="1"
@@ -614,7 +614,7 @@
                 </TextView>
 
                 <EditText
-                    android:id="@+id/et_input_lugg_nama_seller"
+                    android:id="@+id/et_input_confirm_terima_tolak"
                     android:padding="3dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="5dp"
@@ -647,7 +647,7 @@
                 </TextView>
 
                 <EditText
-                    android:id="@+id/et_input_lugg_asal_keberangkatan"
+                    android:id="@+id/et_confirm_waktu_pembayaran"
                     android:padding="3dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="5dp"
@@ -680,7 +680,7 @@
                 </TextView>
 
                 <EditText
-                    android:id="@+id/et_input_lugg_tujuan_berangkat"
+                    android:id="@+id/et_confirm_an"
                     android:padding="3dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="5dp"
@@ -713,7 +713,7 @@
                 </TextView>
 
                 <EditText
-                    android:id="@+id/et_input_lugg_tanggal_berangkat"
+                    android:id="@+id/et_confirm_no_rek"
                     android:padding="3dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="5dp"
@@ -746,7 +746,7 @@
                 </TextView>
 
                 <EditText
-                    android:id="@+id/et_input_lugg_jam_berangkat"
+                    android:id="@+id/et_confirm_jenis_bank"
                     android:padding="3dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="5dp"
@@ -780,7 +780,7 @@
                 </TextView>
 
                 <EditText
-                    android:id="@+id/et_input_lugg_tanggal_tiba"
+                    android:id="@+id/et_confirm_lok_jemput"
                     android:padding="3dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="5dp"
@@ -814,7 +814,7 @@
                 </TextView>
 
                 <EditText
-                    android:id="@+id/et_input_lugg_jam_tiba"
+                    android:id="@+id/et_confirm_jam_jemput"
                     android:padding="3dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="5dp"
@@ -848,7 +848,7 @@
                 </TextView>
 
                 <EditText
-                    android:id="@+id/et_input_lugg_harga_bagasi"
+                    android:id="@+id/et_confirm_estimasi"
                     android:padding="3dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="5dp"
@@ -863,6 +863,7 @@
                 </EditText>
 
                 <TextView
+                    android:id="@+id/tv_btn_confirm_input_post"
                     android:layout_marginBottom="15dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
