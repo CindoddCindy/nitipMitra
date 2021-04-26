@@ -69,6 +69,7 @@
                 >
 
                 <TextView
+                    android:id="@+id/tv_money_item_nama_pengirim"
                     android:padding="5dp"
                     android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
                     android:textColor="#151414"
@@ -84,6 +85,7 @@
 
                 </TextView>
                 <TextView
+                    android:id="@+id/tv_money_item_tanggal_dikirim"
                     android:padding="5dp"
                     android:drawableLeft="@drawable/ic_baseline_date_range_24"
                     android:layout_marginBottom="10dp"
@@ -101,6 +103,7 @@
 
 
                 <TextView
+                    android:id="@+id/tv_money_item_jumlah _uang"
                     android:padding="5dp"
                     android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
                     android:layout_marginBottom="10dp"
@@ -116,6 +119,7 @@
 
                 </TextView>
                 <TextView
+                    android:id="@+id/tv_monet_item_nama_bank"
                     android:padding="5dp"
                     android:drawableLeft="@drawable/ic_baseline_other_houses_24"
                     android:layout_marginBottom="10dp"
