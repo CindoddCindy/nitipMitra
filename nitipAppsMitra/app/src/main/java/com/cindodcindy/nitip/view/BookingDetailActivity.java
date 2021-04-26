@@ -15,7 +15,7 @@ public class BookingDetailActivity extends AppCompatActivity {
             textView_asal, textView_tujuan, textView_date_going, textView_date_arive,
             textView_time_going, textView_time_arrive, textView_nama_penjual, textView_harga, textView_barang_type, textView_kapasitas;
 
-private TextView btn_konfirm, btn_hapus, btn_back;
+    private TextView btn_konfirm, btn_hapus, btn_back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
