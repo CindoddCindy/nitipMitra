@@ -5,6 +5,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.cindodcindy.nitip.R;
@@ -32,6 +33,8 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.BookingC
         private TextView textView_asal_barang, textView_tujuan_barang, textView_nama_pengirim, textView_nama_penerima,
         textView_jenis_barang, textView_berat_kg;
 
+        private CardView cardView_booking;
+
         public BookingChild(@NonNull View itemView) {
             super(itemView);
 
@@ -41,6 +44,7 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.BookingC
             textView_nama_penerima=itemView.findViewById(R.id.tv_item_booking_nama_penerima);
             textView_jenis_barang=itemView.findViewById(R.id.tv_item_booking_jenis_barang);
             textView_berat_kg=itemView.findViewById(R.id.tv_item_booking_height);
+            cardView_booking=itemView.findViewById(R.id.cv_booking);
         }
     }
 }
