@@ -18,7 +18,7 @@ public class InputConfirmActivity extends AppCompatActivity {
 
 
     private EditText editText_order, editText_nama_akun, editText_no_rek, editText_jenis_bank, editText_tranf_sebelum,
-            editText_lokasi_jmpt, editText_jam_jmeput,editText_estimiasi_tiba;
+            editText_lokasi_jmpt, editText_jam_jmeput,editText_estimiasi_tiba, editText_harga;
 
     private TextView textView_btn_confirm;
 
@@ -60,6 +60,7 @@ public class InputConfirmActivity extends AppCompatActivity {
         editText_lokasi_jmpt=findViewById(R.id.et_confirm_lok_jemput);
         editText_jam_jmeput=findViewById(R.id.et_confirm_jam_jemput);
         editText_estimiasi_tiba=findViewById(R.id.et_confirm_estimasi);
+        editText_harga=findViewById(R.id.et_confirm_harga);
     }
 
     public void getDataFromBookingDetail(){
