@@ -120,7 +120,7 @@
 
                 </TextView>
                 <TextView
-                    android:id="@+id/tv_monet_item_nama_bank"
+                    android:id="@+id/tv_money_item_nama_bank"
                     android:padding="5dp"
                     android:drawableLeft="@drawable/ic_baseline_other_houses_24"
                     android:layout_marginBottom="10dp"
