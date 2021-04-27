@@ -315,7 +315,7 @@
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
                                 <TextView
-                                    android:id="@+id/tv_don_det_nama_pengirim"
+                                    android:id="@+id/tv_don_det_by_nama_pengirim"
                                     android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
                                     android:layout_marginLeft="5dp"
                                     android:layout_weight="1"
