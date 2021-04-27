@@ -129,6 +129,7 @@
                                 >
 
                                 <TextView
+                                    android:id="@+id/tv_mon_det_nama_pengirim"
                                     android:padding="5dp"
                                     android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
                                     android:textColor="#151414"
@@ -144,6 +145,7 @@
 
                                 </TextView>
                                 <TextView
+                                    android:id="@+id/tv_mon_det_tgal_kirim"
                                     android:padding="5dp"
                                     android:drawableLeft="@drawable/ic_baseline_date_range_24"
                                     android:layout_marginBottom="10dp"
@@ -161,6 +163,7 @@
 
 
                                 <TextView
+                                    android:id="@+id/tv_mon_det_jumlah_kirim"
                                     android:padding="5dp"
                                     android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
                                     android:layout_marginBottom="10dp"
@@ -176,6 +179,7 @@
 
                                 </TextView>
                                 <TextView
+                                    android:id="@+id/tv_mon_det_nama_bank"
                                     android:padding="5dp"
                                     android:drawableLeft="@drawable/ic_baseline_other_houses_24"
                                     android:layout_marginBottom="10dp"
@@ -295,6 +299,7 @@
 
 
                                 <TextView
+                                    android:id="@+id/tv_mon_det_nama_penerima"
                                     android:padding="5dp"
                                     android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
                                     android:textColor="#151414"
@@ -310,6 +315,7 @@
 
                                 </TextView>
                                 <TextView
+                                    android:id="@+id/tv_mon_det_tgal_diterima"
                                     android:padding="5dp"
                                     android:drawableLeft="@drawable/ic_baseline_date_range_24"
                                     android:layout_marginBottom="10dp"
@@ -326,6 +332,7 @@
                                 </TextView>
 
                                 <TextView
+                                    android:id="@+id/tv_mon_det_lokasi_diterima"
                                     android:padding="5dp"
                                     android:drawableLeft="@drawable/ic_baseline_person_pin_circle_24"
                                     android:layout_marginBottom="10dp"
