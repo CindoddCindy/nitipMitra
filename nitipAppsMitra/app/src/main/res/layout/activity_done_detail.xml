@@ -1165,6 +1165,11 @@
                     </androidx.cardview.widget.CardView>
 
                     <TextView
+                        android:shadowColor="#080909"
+                        android:shadowRadius="5"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+
                         android:layout_marginBottom="15dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="10dp"
@@ -1172,17 +1177,22 @@
                         android:textSize="15dp"
                         android:text="Lihat Pembayaran Saya"
                         android:gravity="center"
-                        android:textColor="#0C0C0C"
+                        android:textColor="#FAF6F6"
                         android:padding="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="#00BCD4">
+                        android:background="#8BC34A">
 
                     </TextView>
 
 
 
                     <TextView
+                        android:shadowColor="#F6FAFA"
+                        android:shadowRadius="5"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+
                         android:layout_marginBottom="15dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="10dp"
@@ -1190,11 +1200,11 @@
                         android:textSize="15dp"
                         android:text="Edit Data Barang Tiba"
                         android:gravity="center"
-                        android:textColor="#0C0C0C"
+                        android:textColor="#020202"
                         android:padding="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="#8BC34A">
+                        android:background="#EBEFC8">
 
                     </TextView>
                     <TextView
@@ -1205,7 +1215,7 @@
                         android:textSize="15dp"
                         android:text="Hapus Data Barang Tiba"
                         android:gravity="center"
-                        android:textColor="#0C0C0C"
+                        android:textColor="#070707"
                         android:padding="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
