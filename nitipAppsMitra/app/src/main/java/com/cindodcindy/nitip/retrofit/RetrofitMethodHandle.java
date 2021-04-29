@@ -1,5 +1,6 @@
 package com.cindodcindy.nitip.retrofit;
 
+import com.cindodcindy.nitip.pojo.pojo_bagasi.post_jasa.NitipPostLuggageRespon;
 import com.cindodcindy.nitip.pojo.pojo_regis_login.pojo_login.NitipLoginRespon;
 import com.cindodcindy.nitip.pojo.pojo_regis_login.pojo_regis.NitipRegisRespon;
 import com.google.gson.JsonObject;
@@ -22,6 +23,13 @@ public interface RetrofitMethodHandle {
     })
     @POST("auth/login")
     Call<NitipLoginRespon> sellerLogin(@Body JsonObject body);
+
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @POST("luggages/users/{user_id}/luggages")
+    Call<NitipPostLuggageRespon> sellerPostJasa(@Body JsonObject body);
+
 
 
 /*

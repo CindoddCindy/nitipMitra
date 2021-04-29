@@ -365,6 +365,7 @@
             </EditText>
 
             <TextView
+                android:id="@+id/tv_post_lugg_jasa_btn"
                 android:layout_marginBottom="15dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
@@ -376,7 +377,7 @@
                 android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#EBEFC8">
+                android:background="#8BC34A">
 
             </TextView>
 
