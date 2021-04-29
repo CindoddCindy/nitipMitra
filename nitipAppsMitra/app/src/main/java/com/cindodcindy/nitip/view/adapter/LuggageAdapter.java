@@ -5,6 +5,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.cindodcindy.nitip.R;
@@ -28,8 +29,10 @@ public class LuggageAdapter extends RecyclerView.Adapter<LuggageAdapter.LuggageC
     }
 
     public class LuggageChild extends RecyclerView.ViewHolder{
+
         private TextView textView_asal, textView_tujuan, textView_date_going, textView_date_arive,
         textView_time_going, textView_time_arrive, textView_nama_penjual, textView_harga, textView_jenis_barang, textView_kapasitas;
+
 
         public LuggageChild(@NonNull View itemView) {
             super(itemView);
@@ -43,6 +46,8 @@ public class LuggageAdapter extends RecyclerView.Adapter<LuggageAdapter.LuggageC
             textView_harga=itemView.findViewById(R.id.tv_item_lugg_price);
             textView_jenis_barang=itemView.findViewById(R.id.tv_item_lugg_type);
             textView_kapasitas=itemView.findViewById(R.id.tv_item_lugg_height);
+
+
         }
     }
 }
