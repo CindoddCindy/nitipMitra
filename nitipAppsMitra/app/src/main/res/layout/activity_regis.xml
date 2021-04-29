@@ -95,7 +95,7 @@
             android:textSize="15dp"
             android:text="Regis"
             android:gravity="center"
-            android:textColor="#EBEFC8"
+            android:textColor="#0C0C0C"
             android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -70,11 +70,11 @@
             android:textSize="15dp"
             android:text="Login"
             android:gravity="center"
-            android:textColor="#EBEFC8"
+            android:textColor="#0A0B08"
             android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#068377">
+            android:background="#8BC34A">
 
         </TextView>
 
