@@ -1,5 +1,6 @@
 package com.cindodcindy.nitip.retrofit;
 
+import com.cindodcindy.nitip.pojo.pojo_regis_login.pojo_login.NitipLoginRespon;
 import com.cindodcindy.nitip.pojo.pojo_regis_login.pojo_regis.NitipRegisRespon;
 import com.google.gson.JsonObject;
 
@@ -16,21 +17,18 @@ public interface RetrofitMethodHandle {
     @POST("auth/registration")
     Call<NitipRegisRespon> sellerRegistration(@Body JsonObject body);
 
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @POST("auth/login")
+    Call<NitipLoginRespon> sellerLogin(@Body JsonObject body);
+
+
 /*
 
-    @Headers({
-            "Content-Type:application/json"
-    })
-    @POST("user/signin")
-    Call<FoodTrashLoginMitraRespon> isLoginValid(@Body JsonObject body);
 
 
 
-    @Headers({
-            "Content-Type:application/json"
-    })
-    @POST("user/signup")
-    Call<FoodTrashRegisMitraRespon> isRegistration(@Body JsonObject body);
 
 
     @Headers({
