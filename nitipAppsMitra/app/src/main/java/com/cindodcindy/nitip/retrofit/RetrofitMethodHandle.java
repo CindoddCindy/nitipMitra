@@ -1,5 +1,6 @@
 package com.cindodcindy.nitip.retrofit;
 
+import com.cindodcindy.nitip.pojo.pojo_bagasi.get_jasa.NitipGetLuggageRespon;
 import com.cindodcindy.nitip.pojo.pojo_bagasi.post_jasa.NitipPostLuggageRespon;
 import com.cindodcindy.nitip.pojo.pojo_regis_login.pojo_login.NitipLoginRespon;
 import com.cindodcindy.nitip.pojo.pojo_regis_login.pojo_regis.NitipRegisRespon;
@@ -7,8 +8,10 @@ import com.google.gson.JsonObject;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.GET;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
+import retrofit2.http.Path;
 
 public interface RetrofitMethodHandle {
 
@@ -27,9 +30,14 @@ public interface RetrofitMethodHandle {
     @Headers({
             "Content-Type:application/json"
     })
-    @POST("luggages/users/{user_id}/luggages")
-    Call<NitipPostLuggageRespon> sellerPostJasa(@Body JsonObject body);
+    @POST("luggages/users/{userId}/luggages")
+    Call<NitipPostLuggageRespon> sellerPostJasa(@Path("userId") Long user_id, @Body JsonObject body);
 
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @GET("luggages/users/{userId}/luggages")
+    Call<NitipGetLuggageRespon> sellerGetOwnLuggage(@Path("userId") Long user_id);
 
 
 /*
@@ -46,11 +54,6 @@ public interface RetrofitMethodHandle {
     Call<FoodTrashMitraPostItemRespon> isPostDataItem(@Path ("userId") Long id, @HeaderMap Map<String,String > Map, @Body JsonObject body);
 
 
-    @Headers({
-            "Content-Type:application/json"
-    })
-    @GET("order/users/{userId}/orders")
-    Call<MitraGetOrderRespon> getOrder(@Path ("userId") Long id, @HeaderMap Map<String,String > Map);
 
 
     @Headers({

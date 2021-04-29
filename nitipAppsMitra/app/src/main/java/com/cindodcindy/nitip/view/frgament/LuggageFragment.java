@@ -3,12 +3,28 @@ package com.cindodcindy.nitip.view.frgament;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.cindodcindy.nitip.R;
+import com.cindodcindy.nitip.pojo.pojo_bagasi.get_jasa.Content;
+import com.cindodcindy.nitip.pojo.pojo_bagasi.get_jasa.NitipGetLuggageRespon;
+import com.cindodcindy.nitip.retrofit.RetrofitHandle;
+import com.cindodcindy.nitip.retrofit.RetrofitMethodHandle;
+import com.cindodcindy.nitip.shared_pref.SpHandle;
+import com.cindodcindy.nitip.view.adapter.LuggageAdapter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -21,6 +37,15 @@ public class LuggageFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+
+
+
+    private RecyclerView recyclerView;
+    private LuggageAdapter luggageAdapter;
+    private List<Content> contentList = new ArrayList<>();
+    private RetrofitMethodHandle retrofitMethodHandle;
+    private SpHandle spHandle;
+
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -61,6 +86,66 @@ public class LuggageFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_luggage, container, false);
+         View view= inflater.inflate(R.layout.fragment_luggage, container, false);
+
+        spHandle = new SpHandle(getContext());
+
+        recyclerView = view.findViewById(R.id.rv_lugg);
+        luggageAdapter = new LuggageAdapter( contentList, getContext());
+        recyclerView.setAdapter(luggageAdapter);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+        recyclerView.setLayoutManager(linearLayoutManager);
+
+        sellerGetOwnLuggageList();
+
+        return view;
+    }
+
+
+    public void sellerGetOwnLuggageList(){
+
+        Long id = spHandle.getIdSeller();
+
+
+
+        retrofitMethodHandle = RetrofitHandle.getRetrofitLink().create(RetrofitMethodHandle.class);
+        Call<NitipGetLuggageRespon> getLuggageResponCall= retrofitMethodHandle.sellerGetOwnLuggage(id);
+        getLuggageResponCall.enqueue(new Callback<NitipGetLuggageRespon>() {
+            @Override
+            public void onResponse(Call<NitipGetLuggageRespon> call, Response<NitipGetLuggageRespon> response) {
+
+                if (response.isSuccessful()) {
+                    List<Content> content = response.body().getContent();
+                    luggageAdapter = new LuggageAdapter(content, getContext());
+                    recyclerView.setAdapter(luggageAdapter);
+                    luggageAdapter.notifyDataSetChanged();
+                }
+                else {
+                    // error case
+                    switch (response.code()) {
+                        case 404:
+                            Toast.makeText(getContext(), "404 not found", Toast.LENGTH_SHORT).show();
+                            break;
+                        case 500:
+                            Toast.makeText(getContext(), "500 internal server error", Toast.LENGTH_SHORT).show();
+                            break;
+                        case 401:
+                            Toast.makeText(getContext(), "401 unauthorized", Toast.LENGTH_SHORT).show();
+                            break;
+
+                        default:
+                            Toast.makeText(getContext(), "unknown error", Toast.LENGTH_SHORT).show();
+                            break;
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(Call<NitipGetLuggageRespon> call, Throwable t) {
+                Toast.makeText(getContext(), "network failure :( inform the user and possibly retry ", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
     }
 }
