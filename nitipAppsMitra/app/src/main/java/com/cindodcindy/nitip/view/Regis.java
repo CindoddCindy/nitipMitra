@@ -78,8 +78,8 @@ public class Regis extends AppCompatActivity {
 
 
         RetrofitMethodHandle retrofitMethodHandle =  RetrofitHandle.getRetrofitLink().create(RetrofitMethodHandle.class);
-        Call<NitipRegisRespon> call= retrofitMethodHandle.sellerRegistration(jsonObject);
-        call.enqueue(new Callback<NitipRegisRespon>() {
+        Call<NitipRegisRespon> nitipRegisResponCall= retrofitMethodHandle.sellerRegistration(jsonObject);
+        nitipRegisResponCall.enqueue(new Callback<NitipRegisRespon>() {
             @Override
             public void onResponse(Call<NitipRegisRespon> call, Response<NitipRegisRespon> response) {
                 if(response.isSuccessful()){

@@ -112,8 +112,8 @@ public class InputLuggageActivity extends AppCompatActivity {
 
 
         RetrofitMethodHandle retrofitMethodHandle =  RetrofitHandle.getRetrofitLink().create(RetrofitMethodHandle.class);
-        Call<NitipPostLuggageRespon> call= retrofitMethodHandle.sellerPostJasa(jsonObject);
-        call.enqueue(new Callback<NitipPostLuggageRespon>() {
+        Call<NitipPostLuggageRespon> nitipPostLuggageResponCall= retrofitMethodHandle.sellerPostJasa(idSeller,jsonObject);
+        nitipPostLuggageResponCall.enqueue(new Callback<NitipPostLuggageRespon>() {
             @Override
             public void onResponse(Call<NitipPostLuggageRespon> call, Response<NitipPostLuggageRespon> response) {
                 if(response.isSuccessful()){

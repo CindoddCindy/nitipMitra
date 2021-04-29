@@ -68,8 +68,8 @@ public class Login extends AppCompatActivity {
 
 
         RetrofitMethodHandle retrofitMethodHandle =  RetrofitHandle.getRetrofitLink().create(RetrofitMethodHandle.class);
-        Call<NitipLoginRespon> call= retrofitMethodHandle.sellerLogin(jsonObject);
-        call.enqueue(new Callback<NitipLoginRespon>() {
+        Call<NitipLoginRespon> loginResponCall= retrofitMethodHandle.sellerLogin(jsonObject);
+        loginResponCall.enqueue(new Callback<NitipLoginRespon>() {
             @Override
             public void onResponse(Call<NitipLoginRespon> call, Response<NitipLoginRespon> response) {
                 if(response.isSuccessful()){
