@@ -72,10 +72,6 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.BookingC
                 bundle.putString("jenisBr", content.getJenisBarangKirim());
                 bundle.putString("beratBr",content.getKapasitasBarang());
 
-
-
-
-
                 Intent intent = new Intent(context, BookingDetailActivity.class);
                 intent.putExtras(bundle);
                 context.startActivity(intent);
