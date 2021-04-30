@@ -2,6 +2,7 @@ package com.cindodcindy.nitip.retrofit;
 
 import com.cindodcindy.nitip.pojo.pojo_bagasi.get_jasa.NitipGetLuggageRespon;
 import com.cindodcindy.nitip.pojo.pojo_bagasi.post_jasa.NitipPostLuggageRespon;
+import com.cindodcindy.nitip.pojo.pojo_booking.pojo_get_booking.NitipGetBookingRespon;
 import com.cindodcindy.nitip.pojo.pojo_konfirm.pojo_post_confirm.NitipResponPostConfirm;
 import com.cindodcindy.nitip.pojo.pojo_regis_login.pojo_login.NitipLoginRespon;
 import com.cindodcindy.nitip.pojo.pojo_regis_login.pojo_regis.NitipRegisRespon;
@@ -39,6 +40,13 @@ public interface RetrofitMethodHandle {
     })
     @GET("luggages/users/{userId}/luggages")
     Call<NitipGetLuggageRespon> sellerGetOwnLuggage(@Path("userId") Long user_id);
+
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @GET("booking/users/{userId}/bookings")
+    Call<NitipGetBookingRespon> sellerGetBooking(@Path("userId") Long user_id);
+
 
 
     @Headers({
