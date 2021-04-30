@@ -2,6 +2,7 @@ package com.cindodcindy.nitip.retrofit;
 
 import com.cindodcindy.nitip.pojo.pojo_bagasi.get_jasa.NitipGetLuggageRespon;
 import com.cindodcindy.nitip.pojo.pojo_bagasi.post_jasa.NitipPostLuggageRespon;
+import com.cindodcindy.nitip.pojo.pojo_konfirm.pojo_post_confirm.NitipResponPostConfirm;
 import com.cindodcindy.nitip.pojo.pojo_regis_login.pojo_login.NitipLoginRespon;
 import com.cindodcindy.nitip.pojo.pojo_regis_login.pojo_regis.NitipRegisRespon;
 import com.google.gson.JsonObject;
@@ -38,6 +39,21 @@ public interface RetrofitMethodHandle {
     })
     @GET("luggages/users/{userId}/luggages")
     Call<NitipGetLuggageRespon> sellerGetOwnLuggage(@Path("userId") Long user_id);
+
+
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @POST("confirmation/users/{userId}/confirmations")
+    Call<NitipResponPostConfirm> sellerPostConfirmToOwn(@Path("userId") Long user_id, @Body JsonObject body);
+
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @POST("confirmation/users/{userId}/confirmations")
+    Call<NitipResponPostConfirm> sellerPostConfirmToBuyer(@Path("userId") Long user_id, @Body JsonObject body);
+
+
 
 
 /*
