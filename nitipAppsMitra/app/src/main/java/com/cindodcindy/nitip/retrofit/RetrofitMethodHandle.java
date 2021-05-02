@@ -4,6 +4,7 @@ import com.cindodcindy.nitip.pojo.pojo_bagasi.get_jasa.NitipGetLuggageRespon;
 import com.cindodcindy.nitip.pojo.pojo_bagasi.post_jasa.NitipPostLuggageRespon;
 import com.cindodcindy.nitip.pojo.pojo_booking.pojo_get_booking.NitipGetBookingRespon;
 import com.cindodcindy.nitip.pojo.pojo_konfirm.pojo_post_confirm.NitipResponPostConfirm;
+import com.cindodcindy.nitip.pojo.pojo_payment.get_payement.NitipGetPaymentRespon;
 import com.cindodcindy.nitip.pojo.pojo_regis_login.pojo_login.NitipLoginRespon;
 import com.cindodcindy.nitip.pojo.pojo_regis_login.pojo_regis.NitipRegisRespon;
 import com.google.gson.JsonObject;
@@ -61,6 +62,11 @@ public interface RetrofitMethodHandle {
     @POST("confirmation/users/{userId}/confirmations")
     Call<NitipResponPostConfirm> sellerPostConfirmToBuyer(@Path("userId") Long user_id, @Body JsonObject body);
 
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @GET("payment/users/{userId}/payments")
+    Call<NitipGetPaymentRespon> sellerGetPaymentList(@Path("userId") Long user_id);
 
 
 
