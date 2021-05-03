@@ -86,6 +86,12 @@ public class NitipPostDoneRespon {
     @SerializedName("jenisBank")
     @Expose
     private String jenisBank;
+    @SerializedName("jumlahUangSeller")
+    @Expose
+    private String jumlahUangSeller;
+    @SerializedName("jumlahBayarBuyer")
+    @Expose
+    private String jumlahBayarBuyer;
     @SerializedName("bankPengirim")
     @Expose
     private String bankPengirim;
@@ -94,10 +100,10 @@ public class NitipPostDoneRespon {
     private String tanggalTransfer;
     @SerializedName("penerimaAn")
     @Expose
-    private Object penerimaAn;
+    private String penerimaAn;
     @SerializedName("pengirimAn")
     @Expose
-    private Object pengirimAn;
+    private String pengirimAn;
 
     /**
      * No args constructor for use in serialization
@@ -123,11 +129,13 @@ public class NitipPostDoneRespon {
      * @param id
      * @param kapasitas
      * @param jamBerangkat
+     * @param jumlahBayarBuyer
      * @param updatedAt
      * @param pengirimAn
      * @param alamatPenerima
      * @param jenisBank
      * @param tanggalBerangkat
+     * @param jumlahUangSeller
      * @param jamTiba
      * @param tanggalBarangTiba
      * @param tujuan
@@ -139,7 +147,7 @@ public class NitipPostDoneRespon {
      * @param tanggalTiba
      * @param penerimaAn
      */
-    public NitipPostDoneRespon(String createdAt, String updatedAt, long id, String tanggalBarangTiba, String diterimaOleh, String lokasiBarangDiterima, long idSeller, long idBuyer, String namaPembeli, String alamatPembeli, String alamatPenerima, String namaPenerima, String jenisBarangKirim, String kapasitasBarang, String namaPenjual, String asal, String tujuan, String tanggalBerangkat, String jamBerangkat, String tanggalTiba, String jamTiba, String kapasitas, String jenisBarang, String hargaBagasi, String noRek, String jenisBank, String bankPengirim, String tanggalTransfer, Object penerimaAn, Object pengirimAn) {
+    public NitipPostDoneRespon(String createdAt, String updatedAt, long id, String tanggalBarangTiba, String diterimaOleh, String lokasiBarangDiterima, long idSeller, long idBuyer, String namaPembeli, String alamatPembeli, String alamatPenerima, String namaPenerima, String jenisBarangKirim, String kapasitasBarang, String namaPenjual, String asal, String tujuan, String tanggalBerangkat, String jamBerangkat, String tanggalTiba, String jamTiba, String kapasitas, String jenisBarang, String hargaBagasi, String noRek, String jenisBank, String jumlahUangSeller, String jumlahBayarBuyer, String bankPengirim, String tanggalTransfer, String penerimaAn, String pengirimAn) {
         super();
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
@@ -167,6 +175,8 @@ public class NitipPostDoneRespon {
         this.hargaBagasi = hargaBagasi;
         this.noRek = noRek;
         this.jenisBank = jenisBank;
+        this.jumlahUangSeller = jumlahUangSeller;
+        this.jumlahBayarBuyer = jumlahBayarBuyer;
         this.bankPengirim = bankPengirim;
         this.tanggalTransfer = tanggalTransfer;
         this.penerimaAn = penerimaAn;
@@ -381,6 +391,22 @@ public class NitipPostDoneRespon {
         this.jenisBank = jenisBank;
     }
 
+    public String getJumlahUangSeller() {
+        return jumlahUangSeller;
+    }
+
+    public void setJumlahUangSeller(String jumlahUangSeller) {
+        this.jumlahUangSeller = jumlahUangSeller;
+    }
+
+    public String getJumlahBayarBuyer() {
+        return jumlahBayarBuyer;
+    }
+
+    public void setJumlahBayarBuyer(String jumlahBayarBuyer) {
+        this.jumlahBayarBuyer = jumlahBayarBuyer;
+    }
+
     public String getBankPengirim() {
         return bankPengirim;
     }
@@ -397,19 +423,19 @@ public class NitipPostDoneRespon {
         this.tanggalTransfer = tanggalTransfer;
     }
 
-    public Object getPenerimaAn() {
+    public String getPenerimaAn() {
         return penerimaAn;
     }
 
-    public void setPenerimaAn(Object penerimaAn) {
+    public void setPenerimaAn(String penerimaAn) {
         this.penerimaAn = penerimaAn;
     }
 
-    public Object getPengirimAn() {
+    public String getPengirimAn() {
         return pengirimAn;
     }
 
-    public void setPengirimAn(Object pengirimAn) {
+    public void setPengirimAn(String pengirimAn) {
         this.pengirimAn = pengirimAn;
     }
 
