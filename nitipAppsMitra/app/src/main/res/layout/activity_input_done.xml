@@ -625,8 +625,9 @@
                                 android:orientation="vertical"
                                 >
 
-                                <TextView
-                                    android:id="@+id/tv_input_done_tf_sl_name"
+                                <EditText
+                                    android:background="none"
+                                    android:id="@+id/et_input_done_tf_sl_pnerima_an"
                                     android:padding="5dp"
                                     android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
                                     android:textColor="#151414"
@@ -640,23 +641,24 @@
                                     android:layout_height="wrap_content"
                                     >
 
-                                </TextView>
-                                <TextView
-                                    android:id="@+id/tv_input_done_tf_sl_tgal"
+                                </EditText>
+                                <EditText
+                                    android:background="none"
+                                    android:id="@+id/et_input_done_tf_sl_no_rek"
                                     android:padding="5dp"
-                                    android:drawableLeft="@drawable/ic_baseline_date_range_24"
+                                    android:drawableLeft="@drawable/ic_baseline_arrow_right_24"
                                     android:layout_marginBottom="10dp"
                                     android:textColor="#151414"
                                     android:textSize="12dp"
                                     android:textStyle="normal"
                                     android:gravity="left"
                                     android:drawablePadding="5dp"
-                                    android:text="Tanggal di transfer"
+                                    android:text="Nomor Rekening"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     >
 
-                                </TextView>
+                                </EditText>
 
 
                                 <!--
@@ -707,8 +709,9 @@
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical"
                                 >
-                                <TextView
-                                    android:id="@+id/tv_input_done_sl_tf_harga"
+                                <EditText
+                                    android:background="none"
+                                    android:id="@+id/et_input_done_sl_jumlah_uang"
                                     android:padding="5dp"
                                     android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
                                     android:layout_marginBottom="10dp"
@@ -722,9 +725,10 @@
                                     android:layout_height="wrap_content"
                                     >
 
-                                </TextView>
-                                <TextView
-                                    android:id="@+id/tv_input_done_tf_sl_nama_bank"
+                                </EditText>
+                                <EditText
+                                    android:background="none"
+                                    android:id="@+id/et_input_done_tf_sl_nama_bank"
                                     android:padding="5dp"
                                     android:drawableLeft="@drawable/ic_baseline_other_houses_24"
                                     android:layout_marginBottom="10dp"
@@ -738,7 +742,7 @@
                                     android:layout_height="wrap_content"
                                     >
 
-                                </TextView>
+                                </EditText>
 
 
                                 <!--
