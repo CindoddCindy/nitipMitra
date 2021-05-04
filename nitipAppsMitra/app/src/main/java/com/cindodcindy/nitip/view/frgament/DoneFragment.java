@@ -12,7 +12,8 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.cindodcindy.nitip.R;
-import com.cindodcindy.nitip.pojo.pojo_payment.get_payement.Content;
+import com.cindodcindy.nitip.pojo.pojo_done.pojo_get_done.Content;
+import com.cindodcindy.nitip.pojo.pojo_done.pojo_get_done.NitipGetDoneRespon;
 import com.cindodcindy.nitip.pojo.pojo_payment.get_payement.NitipGetPaymentRespon;
 import com.cindodcindy.nitip.retrofit.RetrofitHandle;
 import com.cindodcindy.nitip.retrofit.RetrofitMethodHandle;
@@ -92,7 +93,7 @@ public class DoneFragment extends Fragment {
 
         recyclerView = view.findViewById(R.id.rv_done);
         doneAdapter = new DoneAdapter( contentList, getContext());
-        recyclerView.setAdapter(paymentAdapter);
+        recyclerView.setAdapter(doneAdapter);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(linearLayoutManager);
 
@@ -107,16 +108,16 @@ public class DoneFragment extends Fragment {
         Long id = spHandle.getIdSeller();
 
         retrofitMethodHandle = RetrofitHandle.getRetrofitLink().create(RetrofitMethodHandle.class);
-        Call<NitipGetPaymentRespon> getPaymentResponCall= retrofitMethodHandle.sellerGetPaymentList(id);
-        getPaymentResponCall.enqueue(new Callback<NitipGetPaymentRespon>() {
+        Call<NitipGetDoneRespon> doneResponCall= retrofitMethodHandle.sellerGetDone(id);
+        doneResponCall.enqueue(new Callback<NitipGetDoneRespon>() {
             @Override
-            public void onResponse(Call<NitipGetPaymentRespon> call, Response<NitipGetPaymentRespon> response) {
+            public void onResponse(Call<NitipGetDoneRespon> call, Response<NitipGetDoneRespon> response) {
 
                 if (response.isSuccessful()) {
                     List<Content> content = response.body().getContent();
-                    paymentAdapter = new PaymentAdapter(content, getContext());
-                    recyclerView.setAdapter(paymentAdapter);
-                    paymentAdapter.notifyDataSetChanged();
+                    doneAdapter = new DoneAdapter(content, getContext());
+                    recyclerView.setAdapter(doneAdapter);
+                    doneAdapter.notifyDataSetChanged();
                 }
                 else {
                     // error case
@@ -139,7 +140,7 @@ public class DoneFragment extends Fragment {
             }
 
             @Override
-            public void onFailure(Call<NitipGetPaymentRespon> call, Throwable t) {
+            public void onFailure(Call<NitipGetDoneRespon> call, Throwable t) {
                 Toast.makeText(getContext(), "network failure :( inform the user and possibly retry ", Toast.LENGTH_SHORT).show();
 
             }
