@@ -3,8 +3,10 @@ package com.cindodcindy.nitip.retrofit;
 import com.cindodcindy.nitip.pojo.pojo_bagasi.get_jasa.NitipGetLuggageRespon;
 import com.cindodcindy.nitip.pojo.pojo_bagasi.post_jasa.NitipPostLuggageRespon;
 import com.cindodcindy.nitip.pojo.pojo_booking.pojo_get_booking.NitipGetBookingRespon;
+import com.cindodcindy.nitip.pojo.pojo_done.pojo_get_done.NitipGetDoneRespon;
 import com.cindodcindy.nitip.pojo.pojo_done.pojo_post_done.NitipPostDoneRespon;
 import com.cindodcindy.nitip.pojo.pojo_konfirm.pojo_post_confirm.NitipResponPostConfirm;
+import com.cindodcindy.nitip.pojo.pojo_money.pojo_get_money.NitipGetMoneyRespon;
 import com.cindodcindy.nitip.pojo.pojo_payment.get_payement.NitipGetPaymentRespon;
 import com.cindodcindy.nitip.pojo.pojo_regis_login.pojo_login.NitipLoginRespon;
 import com.cindodcindy.nitip.pojo.pojo_regis_login.pojo_regis.NitipRegisRespon;
@@ -87,6 +89,20 @@ public interface RetrofitMethodHandle {
     })
     @POST("done/users/{userId}/dones")
     Call<NitipPostDoneRespon> sellerPostDoneToOwnSeller(@Path("userId") Long user_id, @Body JsonObject body);
+
+
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @GET("done/users/{userId}/dones")
+    Call<NitipGetDoneRespon> sellerGetDone(@Path("userId") Long user_id);
+
+
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @GET("money/users/{userId}/moneys")
+    Call<NitipGetMoneyRespon> sellerGetMoney(@Path("userId") Long user_id);
 
 
 

@@ -16,7 +16,7 @@ public class DoneDetailActivity extends AppCompatActivity {
     textView_asal, textView_tujuan, textView_date_going, textView_date_arive,
             textView_time_going, textView_time_arrive, textView_nama_penjual, textView_harga, textView_barang_type, textView_kapasitas,
 
-    textView_uang_nama_tf, textView_uang_tgal_tf, textView_uang_jumlah_tf, textView_uang_bank_asal, textView_btn_hapus_payment, textView_uang_nama_tf_sl, textView_uang_tgal_tf_sl, textView_uang_jumlah_tf_sl, textView_uang_bank_asal_sl;
+    textView_uang_nama_tf, textView_uang_no_rek_tf, textView_uang_jumlah_tf, textView_uang_bank_terima, textView_btn_hapus_payment, textView_uang_nama_tf_sl, textView_uang_tgal_tf_sl, textView_uang_jumlah_tf_sl, textView_uang_bank_asal_sl;
 
     private TextView textView_nama_penerima_pn, textView_tanggal_diterima_pn, textView_lokasi_diterima_pn;
 
@@ -49,9 +49,9 @@ public class DoneDetailActivity extends AppCompatActivity {
         textView_kapasitas=findViewById(R.id.tv_don_det_lugg_height);
 
         textView_uang_nama_tf=findViewById(R.id.tv_don_det_tf_sl_name);
-        textView_uang_tgal_tf=findViewById(R.id.tv_don_det_tf_sl_tgal);
+        textView_uang_no_rek_tf=findViewById(R.id.tv_don_det_tf_sl_no_rek);
         textView_uang_jumlah_tf=findViewById(R.id.tv_don_det_sl_tf_harga);
-        textView_uang_bank_asal=findViewById(R.id.tv_don_det_sl_nama_bank);
+        textView_uang_bank_terima=findViewById(R.id.tv_don_det_sl_nama_bank);
 
         textView_uang_nama_tf_sl=findViewById(R.id.tv_don_det_by_nama_akun);
         textView_uang_tgal_tf_sl=findViewById(R.id.tv_don_det_by_tgal);
@@ -67,5 +67,55 @@ public class DoneDetailActivity extends AppCompatActivity {
         textView_hapus_done=findViewById(R.id.tv_don_det_btn_hapus);
 
 
+    }
+
+    public void getDoneDetail(){
+        if(getIntent().getExtras()!=null) {
+            /**
+             * Jika Bundle ada, ambil data dari Bundle
+             */
+            Bundle bundle = getIntent().getExtras();
+
+            // spHandle.setSpIdConfirmOrderEdit(SpHandle.SP_ID_CONFIRM_ORDER_EDIT, bundle.getLong("id_customer"));
+            //spHandle.setSpIdConfirmOrder(SpHandle.SP_ID_CONFIRM_ORDER,bundle.getLong("id_confirm"));
+            textView_asal.setText(bundle.getString("asal"));
+            textView_tujuan.setText(bundle.getString("tujuan"));
+            textView_date_going.setText(bundle.getString("tglgo"));
+            textView_date_arive.setText(bundle.getString("tglarr"));
+            textView_time_going.setText(bundle.getString("jamgo"));
+            textView_time_arrive.setText(bundle.getString("jamarr"));
+            textView_nama_penjual.setText(bundle.getString("namapenjual"));
+            textView_harga.setText(bundle.getString("harga"));
+            textView_kapasitas.setText(bundle.getString("kapasitas"));
+            textView_jenis_barang.setText(bundle.getString("jenisbarang"));
+
+            textView_asal_barang.setText(bundle.getString("asalBr"));
+            textView_tujuan_barang.setText(bundle.getString("tujuanBr"));
+            textView_nama_pengirim.setText(bundle.getString("pengirim"));
+            textView_nama_penerima.setText(bundle.getString("penerima"));
+            textView_jenis_barang.setText(bundle.getString("jenisBr"));
+            textView_berat_kg.setText(bundle.getString("beratBr"));
+
+            textView_nama_penerima_pn.setText(bundle.getString("namaPenerimaBarang"));
+            textView_tanggal_diterima_pn.setText(bundle.getString("tanggalBarangTiba"));
+            textView_lokasi_diterima_pn.setText(bundle.getString("lokasiBarangDiterima"));
+
+
+            //pengirim
+            textView_uang_nama_tf_sl.setText(bundle.getString("akunBayar"));
+            textView_uang_tgal_tf_sl.setText(bundle.getString("tanggalBayar"));
+            textView_uang_jumlah_tf_sl.setText(bundle.getString("hargaBayar"));
+            textView_uang_bank_asal_sl.setText(bundle.getString("bankBayar"));
+
+            //penerima
+            textView_uang_nama_tf.setText(bundle.getString("akunTerima"));
+            textView_uang_no_rek_tf.setText(bundle.getString("noRekTerima"));
+            textView_uang_jumlah_tf.setText(bundle.getString("jumlahTerima"));
+            textView_uang_bank_terima.setText(bundle.getString("bankTerima"));
+
+
+
+
+        }
     }
 }
