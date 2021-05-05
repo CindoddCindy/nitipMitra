@@ -64,4 +64,48 @@ public class ConfirmDetailActivity extends AppCompatActivity {
         mn_jam_jmput=findViewById(R.id.tv_con_det_jam_jemput);
 
     }
+
+    public void getDetailConfirm(){
+        if(getIntent().getExtras()!=null) {
+            /**
+             * Jika Bundle ada, ambil data dari Bundle
+             */
+            Bundle bundle = getIntent().getExtras();
+
+            // spHandle.setSpIdConfirmOrderEdit(SpHandle.SP_ID_CONFIRM_ORDER_EDIT, bundle.getLong("id_customer"));
+            //spHandle.setSpIdConfirmOrder(SpHandle.SP_ID_CONFIRM_ORDER,bundle.getLong("id_confirm"));
+            textView_asal.setText(bundle.getString("asal"));
+            textView_tujuan.setText(bundle.getString("tujuan"));
+            textView_date_going.setText(bundle.getString("tglgo"));
+            textView_date_arive.setText(bundle.getString("tglarr"));
+            textView_time_going.setText(bundle.getString("jamgo"));
+            textView_time_arrive.setText(bundle.getString("jamarr"));
+            textView_nama_penjual.setText(bundle.getString("namapenjual"));
+            textView_harga.setText(bundle.getString("harga"));
+            textView_kapasitas.setText(bundle.getString("kapasitas"));
+            textView_jenis_barang.setText(bundle.getString("jenisbarang"));
+
+
+
+            textView_asal_barang.setText(bundle.getString("asalBr"));
+            textView_tujuan_barang.setText(bundle.getString("tujuanBr"));
+            textView_nama_pengirim.setText(bundle.getString("pengirim"));
+            textView_nama_penerima.setText(bundle.getString("penerima"));
+            textView_jenis_barang.setText(bundle.getString("jenisBr"));
+            textView_berat_kg.setText(bundle.getString("beratBr"));
+
+            mn_nama_akun.setText(bundle.getString("namaAkun"));
+            mn_no_rek.setText(bundle.getString("noRek"));
+            mn_jenis_bank.setText(bundle.getString("jenisBank"));
+            mn_harga.setText(bundle.getString("jumlahBayar"));
+            mn_wktu_tranf.setText(bundle.getString("waktubayar"));
+            mn_lokasi_jmpt.setText(bundle.getString("lokasiBertemu"));
+            mn_jam_jmput.setText(bundle.getString("jamAmbilBrg"));
+            mn_estimiasi_tiba.setText(bundle.getString("estimasisampai"));
+
+
+
+
+        }
+    }
 }
